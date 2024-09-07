@@ -1,0 +1,242 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b1b;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../images/fundoComJava.jpg'); /* Adicione esta linha */
+    background-size: cover; /* Para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Para que a imagem não role junto com a página */
+}
+
+h4 {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    color: #1cec49;
+}  
+
+header, footer {
+    /* background-image: url('../images/fotoJavaFundoIndex.png'); */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative; /* Adicione esta linha */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff4500; /* Cor laranja do logo Java */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff4500; /* Cor laranja do logo Java */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+form input[type="submit"] {
+    background-color: #ff4500; /* Cor laranja do logo Java */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff6347;
+}
+
+/* Estilos adicionais */
+.project {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h2 {
+    color: #ff4500; /* Cor laranja do logo Java */
+}
+
+.project p {
+    color: #d3d3d3;
+}
+
+/* Estilo para a foto do perfil */
+.profile-pic {
+    position: absolute;
+    top: 50px; /* Aumente a distância do topo */
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff4500;
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para a segunda foto */
+#secondPic {
+    position: absolute;
+    top: 50px; /* Aumente a distância do topo */
+    left: 10px; /* foto fica lado 'left' */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff4500;
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#secondPic:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries para ajustar a posição em telas menores */
+@media (max-width: 600px) {
+    .profile-pic, #secondPic {
+        top: 100px; /* Ajuste a posição conforme necessário */
+    }
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* No seu arquivo CSS */
+.linkedin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.linkedin-button:hover {
+    background-color: white; /* Cor de fundo branca no hover */
+    color: green; /* Cor do texto verde no hover */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp-button:hover{
+    background-color: white; /* Cor de fundo branca no hover */
+    color: green; /* Cor do texto verde no hover */
+}
