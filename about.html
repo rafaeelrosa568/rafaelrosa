@@ -1,81 +1,95 @@
-<main>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Rafael Rosa</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <!-- <li><a href="contact.html">Contato</a></li> -->
+            </ul>
+        </nav>
 
-<section>
-<h1>Sobre Mim</h1>
+        <img src="assets/images/rafael.jpg" alt="Minha Foto" class="profile-pic" id="profilePic">
+        <img src="assets/images/fotoLadoDireito.jpg" alt="Outra Foto" id="secondPic">
+    </header>
 
-<p>
-Desenvolvedor Backend com foco em <strong>Java e Spring Boot</strong>, com experiência na criação de <strong>APIs RESTful</strong> e integração com bancos de dados relacionais.
-</p>
+    <main>
+        <!-- SOBRE MIM -->
+        <section>
+            <h1>Sobre Mim</h1>
+            <p>Desenvolvedor Backend com foco em <strong>Java e Spring Boot</strong>, com experiência na criação de <strong>APIs RESTful</strong> e integração com bancos de dados relacionais.</p>
+            <p>Possuo formação técnica na área de <strong>Programação de Sistemas</strong> e experiência prática através de projetos próprios, aplicando conceitos de desenvolvimento backend, organização de código e boas práticas de programação.</p>
+            <p>Estou em busca da minha primeira oportunidade profissional na área de desenvolvimento para colaborar com soluções eficientes, aprender continuamente e evoluir como desenvolvedor.</p>
+        </section>
 
-<p>
-Possuo formação técnica na área de <strong>Programação de Sistemas</strong> e experiência prática através de projetos próprios, aplicando conceitos de desenvolvimento backend, organização de código e boas práticas de programação.
-</p>
+        <!-- SKILLS -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Java ☕</li>
+                <li>Java Web</li>
+                <li>Spring Boot</li>
+                <li>APIs REST</li>
+                <li>PHP (Básico)</li>
+                <li>Servlets</li>
+                <li>JSP</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
+            </ul>
+        </section>
 
-<p>
-Estou em busca da minha primeira oportunidade profissional na área de desenvolvimento para colaborar com soluções eficientes, aprender continuamente e evoluir como desenvolvedor.
-</p>
+        <!-- BANCO DE DADOS -->
+        <section>
+            <h2>Banco de Dados</h2>
+            <ul>
+                <li>MySQL</li>
+                <li>SQL Server</li>
+            </ul>
+        </section>
 
-</section>
+        <!-- FERRAMENTAS -->
+        <section>
+            <h2>Ferramentas</h2>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Insomnia</li>
+                <li>IntelliJ IDEA</li>
+                <li>Eclipse</li>
+                <li>Apache NetBeans</li>
+                <li>VS Code</li>
+            </ul>
+        </section>
 
-<section>
+        <!-- CURSOS -->
+        <section>
+            <h2>Formação e Cursos</h2>
+            <p><strong>Programador de Sistemas</strong></p>
+            <p>Cursos complementares:</p>
+            <ul>
+                <li>API REST em Java</li>
+                <li>Desenvolvimento de APIs com Spring Boot</li>
+            </ul>
+        </section>
+    </main>
 
-<h2>Skills</h2>
+    <!-- MODAL PARA FOTOS -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
-<ul>
-<li>Java ☕</li>
-<li>Java Web</li>
-<li>Spring Boot</li>
-<li>APIs REST</li>
-<li>PHP (Básico)</li>
-<li>Servlets</li>
-<li>JSP</li>
-<li>Bootstrap</li>
-<li>JQuery</li>
-</ul>
+    <footer>
+        <p>&copy; 2025 Rafael Rosa. Desenvolvedor.</p>
+    </footer>
 
-</section>
-
-<section>
-
-<h2>Banco de Dados</h2>
-
-<ul>
-<li>MySQL</li>
-<li>SQL Server</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Ferramentas</h2>
-
-<ul>
-<li>Git & GitHub</li>
-<li>Insomnia</li>
-<li>IntelliJ IDEA</li>
-<li>Eclipse</li>
-<li>Apache NetBeans</li>
-<li>VS Code</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Formação e Cursos</h2>
-
-<p><strong>Programador de Sistemas</strong></p>
-
-<p>
-Cursos complementares:
-</p>
-
-<ul>
-<li>API REST em Java</li>
-<li>Desenvolvimento de APIs com Spring Boot</li>
-</ul>
-
-</section>
-
-</main>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
