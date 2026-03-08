@@ -232,3 +232,25 @@ form input[type="submit"]:hover {
     background-color: white;
     color: green;
 }
+
+/* SKILLS LIST */
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+ul li {
+background-color: rgba(0,0,0,0.6);
+margin: 6px auto;
+padding: 8px;
+border-radius: 6px;
+max-width: 320px;
+transition: 0.3s;
+}
+
+ul li:hover {
+background-color: #1cec49;
+color: black;
+}
+
