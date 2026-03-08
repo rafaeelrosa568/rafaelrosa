@@ -1,6 +1,4 @@
-/* ===========================
-   RESET & ESTILOS GERAIS
-=========================== */
+/* RESET & BODY */
 * {
     margin: 0;
     padding: 0;
@@ -9,216 +7,154 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #0d0d0d; /* fundo preto moderno */
-    background-image: url('../images/fundoComJava.jpg'); /* imagem de fundo */
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    background-image: url('../images/fundoPreto.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #e0e0e0;
-    line-height: 1.6;
-    overflow-x: hidden;
 }
 
-/* ===========================
-   HEADER & NAV
-=========================== */
+/* HEADER / NAV */
 header {
-    background-color: rgba(20, 20, 20, 0.85);
-    padding: 1rem 2rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0,0,0,0.7);
 }
 
 nav ul {
     display: flex;
-    gap: 25px;
-    list-style: none;
-    flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
+    gap: 2rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #e0e0e0;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #00ff99;
-    transform: scale(1.1);
 }
 
-/* ===========================
-   FOTOS DE PERFIL
-=========================== */
-.profile-pic,
-#secondPic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #00ff99;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: absolute;
-    top: 80px;
+/* PROFILE IMAGES */
+.profile-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .profile-pic {
-    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #00ff99;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#secondPic {
-    left: 20px;
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00ff99;
 }
 
-.profile-pic:hover,
-#secondPic:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px #00ff99;
-}
-
-/* ===========================
-   MAIN
-=========================== */
+/* MAIN CONTENT */
 main {
     max-width: 1200px;
-    margin: 140px auto 50px;
-    padding: 0 20px;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-/* SOBRE MIM */
 .sobre-mim {
-    flex: 1 1 400px;
-    background-color: rgba(30, 30, 30, 0.85);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .sobre-mim h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: #00ff99;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    text-align: center;
 }
 
 .sobre-mim p {
-    margin-bottom: 15px;
-    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* LISTAS (Skills, Ferramentas, Cursos) */
-section ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+/* SKILLS / TOOLS GRID */
+.skills-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-section ul li {
-    background-color: rgba(0, 255, 153, 0.1);
-    color: #00ff99;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-section ul li:hover {
-    background-color: #00ff99;
-    color: #0d0d0d;
-    transform: scale(1.1);
-}
-
-/* ===========================
-   FOOTER
-=========================== */
-footer {
+.block {
+    background-color: rgba(0,0,0,0.6);
+    padding: 1.5rem;
+    border-radius: 10px;
     text-align: center;
-    background-color: rgba(20,20,20,0.85);
-    padding: 20px 0;
-    margin-top: 50px;
-    color: #e0e0e0;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* ===========================
-   MODAL
-=========================== */
+.block:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0,255,153,0.2);
+}
+
+.block h2 {
+    color: #00ff99;
+    margin-bottom: 1rem;
+}
+
+.block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.block ul li {
+    margin: 0.5rem 0;
+}
+
+/* MODAL */
 .modal {
-    display: none;
+    display: none; /* comece escondido */
     position: fixed;
     inset: 0;
-    background-color: rgba(0,0,0,0.95);
-    display: flex;
+    background-color: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .modal-content {
-    max-width: 600px;
-    width: 90%;
+    max-width: 80%;
+    max-height: 80%;
     border-radius: 10px;
 }
 
 .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #00ff99;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    color: #fff;
     cursor: pointer;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .close:hover {
-    color: #ffffff;
+    color: #00ff99;
 }
 
-/* ===========================
-   RESPONSIVO
-=========================== */
-@media (max-width: 900px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sobre-mim {
-        width: 100%;
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 500px) {
-    .profile-pic,
-    #secondPic {
-        width: 50px;
-        height: 50px;
-        top: 60px;
-    }
-    .sobre-mim h1 {
-        font-size: 1.6rem;
-    }
-    section ul li {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 2rem;
+    color: #e0e0e0;
 }
